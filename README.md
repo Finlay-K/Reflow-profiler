@@ -1,6 +1,6 @@
 # Reflow Profile Multi‑Agent Extractor (Starter)
 
-This is a pragmatic, production‑leaning starter to parse **reflow profile data** for each **Manufacturer Part Number (MPN)**
+This is a production‑leaning starter to parse **reflow profile data** for each **Manufacturer Part Number (MPN)**
 from public **datasheets**, and export to Excel with the columns:
 
 - **part_number**
@@ -35,7 +35,7 @@ python main.py --bom example_bom.csv --out reflow_profiles.xlsx
 - For **scanned PDFs**, text extraction may be incomplete. Consider adding OCR (pytesseract) later if needed.
 - The output puts combined text in each column (e.g., `150–180 °C for 60–120 s`). Later we can normalise into numbers for averaging.
 
-## Next Steps (when you're ready)
+## Next Steps for Future Development
 - Normalise ranges into midpoints for a per‑MPN vector (preheat_temp_mid, preheat_time_mid, etc.).
 - Compute the average / “best‑fit” profile across a BoM.
 - Add PCB‑level factors (size, thickness, copper %) as weights.
